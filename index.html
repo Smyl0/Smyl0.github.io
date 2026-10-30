@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Steven Pallo · Ingeniería en Software</title>
+  <meta name="description" content="Portafolio de Steven Pallo, estudiante de Ingeniería en Software en la Universidad Técnica de Ambato. Java, C#, .NET, React, PHP, Python, C++ y más." />
+  <meta name="author" content="Steven Pallo" />
+  <meta name="theme-color" content="#05070D" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://smyl0.github.io/" />
+  <meta property="og:title" content="Steven Pallo · Ingeniería en Software" />
+  <meta property="og:description" content="Proyectos, stack tecnológico y una terminal interactiva. Portafolio de Steven Pallo." />
+  <meta property="og:locale" content="es_EC" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="assets/js/main.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Steven Pallo",
+    "url": "https://smyl0.github.io/",
+    "email": "mailto:stevenpallo1025@gmail.com",
+    "jobTitle": "Estudiante de Ingeniería en Software",
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Universidad Técnica de Ambato" },
+    "sameAs": ["https://github.com/Smyl0", "https://www.linkedin.com/in/steven-pallo-b2717340a"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <canvas id="network" class="network" aria-hidden="true"></canvas>
+  <div class="glow" id="glow" aria-hidden="true"></div>
+
+  <!-- ============================ NAVEGACIÓN ============================ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#inicio" class="logo" aria-label="Steven Pallo, ir al inicio">
+        <span class="logo__mark">&lt;</span>SP<span class="logo__mark">/&gt;</span>
+      </a>
+
+      <nav class="nav__menu" id="menu" aria-label="Principal">
+        <a href="#sobre-mi" class="nav__link">Sobre mí</a>
+        <a href="#skills" class="nav__link">Skills</a>
+        <a href="#proyectos" class="nav__link">Proyectos</a>
+        <a href="#terminal" class="nav__link">Terminal</a>
+        <a href="#contacto" class="nav__link nav__link--cta">Contacto</a>
+      </nav>
+
+      <button class="burger" id="burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- ============================ HERO ============================ -->
+    <section class="hero" id="inicio">
+      <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="grid-bg" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="pill reveal"><span class="pill__dot"></span>Ingeniería en Software · UTA</p>
+
+          <h1 class="hero__title reveal" style="--d:.08s">
+            <span class="hero__hello">Hola, soy</span>
+            <span class="hero__name">Steven Pallo</span>
+          </h1>
+
+          <p class="hero__role reveal" style="--d:.16s">
+            <span class="hero__chevron" aria-hidden="true">&gt;</span>
+            <span id="typed">Estudiante de Ingeniería en Software</span><span class="caret" aria-hidden="true"></span>
+          </p>
+
+          <p class="hero__lead reveal" style="--d:.24s">
+            Estudiante de 4.º semestre en la Universidad Técnica de Ambato. Construyo aplicaciones web y de escritorio,
+            y disfruto convertir ideas en código limpio, eficiente y bien estructurado.
+          </p>
+
+          <div class="hero__cta reveal" style="--d:.32s">
+            <a href="#proyectos" class="btn btn--primary magnetic">
+              <span>Ver proyectos</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#contacto" class="btn btn--ghost magnetic"><span>Contáctame</span></a>
+          </div>
+
+          <ul class="socials reveal" style="--d:.4s" aria-label="Redes">
+            <li>
+              <a href="https://github.com/Smyl0" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/steven-pallo-b2717340a" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:stevenpallo1025@gmail.com" aria-label="Enviar correo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero__visual reveal" style="--d:.2s">
+          <div class="code tilt">
+            <div class="code__bar">
+              <span class="dot dot--red"></span><span class="dot dot--yellow"></span><span class="dot dot--green"></span>
+              <span class="code__file">Developer.cs</span>
+            </div>
+<pre class="code__body"><code><span class="k">public class</span> <span class="t">Developer</span>
+<span class="p">{</span>
+  <span class="k">public string</span> <span class="v">Nombre</span>   <span class="p">=</span> <span class="s">"Steven Pallo"</span><span class="p">;</span>
+  <span class="k">public string</span> <span class="v">Carrera</span>  <span class="p">=</span> <span class="s">"Ing. Software"</span><span class="p">;</span>
+  <span class="k">public string</span> <span class="v">Uni</span>      <span class="p">=</span> <span class="s">"UTA · Ambato"</span><span class="p">;</span>
+  <span class="k">public int</span>    <span class="v">Semestre</span> <span class="p">=</span> <span class="n">4</span><span class="p">;</span>
+
+  <span class="k">public string</span><span class="p">[]</span> <span class="v">Stack</span> <span class="p">=</span>
+  <span class="p">{</span>
+    <span class="s">"Java"</span><span class="p">,</span> <span class="s">"C#"</span><span class="p">,</span> <span class="s">".NET"</span><span class="p">,</span> <span class="s">"React"</span><span class="p">,</span>
+    <span class="s">"PHP"</span><span class="p">,</span> <span class="s">"Python"</span><span class="p">,</span> <span class="s">"C++"</span><span class="p">,</span> <span class="s">"SQL"</span>
+  <span class="p">};</span>
+
+  <span class="c">// Siempre listo para el siguiente reto</span>
+  <span class="k">public bool</span> <span class="f">SiempreAprendo</span><span class="p">()</span> <span class="p">=&gt;</span> <span class="k">true</span><span class="p">;</span>
+<span class="p">}</span></code></pre>
+            <div class="code__status">
+              <span><i class="dot dot--live"></i>C#</span>
+              <span>UTF-8</span>
+              <span>Ln 17, Col 2</span>
+            </div>
+          </div>
+
+          <div class="float float--1" aria-hidden="true"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.18.0/icons/java/java-original.svg" alt="" width="22" height="22" />Java</div>
+          <div class="float float--2" aria-hidden="true"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.18.0/icons/react/react-original.svg" alt="" width="22" height="22" />React</div>
+          <div class="float float--3" aria-hidden="true"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.18.0/icons/dotnetcore/dotnetcore-original.svg" alt="" width="22" height="22" />.NET</div>
+        </div>
+      </div>
+
+      <a href="#sobre-mi" class="scroll-cue" aria-label="Bajar a Sobre mí"><span></span></a>
+    </section>
+
+    <!-- ============================ CINTA ============================ -->
+    <div class="ribbon" aria-hidden="true">
+      <div class="marquee">
+        <div class="marquee__track" id="marquee">
+          <span>Java</span><i>✦</i><span class="outline">C#</span><i>✦</i><span>.NET</span><i>✦</i><span class="outline">React</span><i>✦</i>
+          <span>PHP</span><i>✦</i><span class="outline">Python</span><i>✦</i><span>C++</span><i>✦</i><span class="outline">SQL</span><i>✦</i>
+          <span>JavaScript</span><i>✦</i><span class="outline">Linux</span><i>✦</i><span>Git</span><i>✦</i><span class="outline">Packet Tracer</span><i>✦</i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================ SOBRE MÍ ============================ -->
+    <section class="section" id="sobre-mi">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="kicker">01 <i></i> sobre_mí</span>
+          <h2 class="section__title">Un poco sobre <span class="gradient-text">mí</span></h2>
+        </div>
+
+        <div class="about">
+          <aside class="about__card card spotlight reveal">
+            <div class="avatar">
+              <div class="avatar__ring"></div>
+              <div class="avatar__inner"><span class="gradient-text">SP</span></div>
+            </div>
+            <h3>Steven Pallo</h3>
+            <p class="muted">Software Engineering Student</p>
+            <ul class="facts">
+              <li><span aria-hidden="true">🎓</span>Universidad Técnica de Ambato</li>
+              <li><span aria-hidden="true">📚</span>Ingeniería en Software · 4.º semestre</li>
+              <li><span aria-hidden="true">📍</span>Ambato, Ecuador</li>
+            </ul>
+          </aside>
+
+          <div class="about__text">
+            <p class="reveal">
+              Soy <strong>Steven Pallo</strong>, estudiante de <strong>Ingeniería en Software</strong> en la
+              <strong>Universidad Técnica de Ambato</strong>. Me gusta entender cómo funcionan las cosas por dentro y
+              transformar ese conocimiento en software que de verdad sirva.
+            </p>
+            <p class="reveal" style="--d:.08s">
+              He trabajado con <strong>estructuras de datos</strong> en Java y C++ (listas enlazadas, árboles BST y sus recorridos),
+              desarrollé un <strong>Tower Defense con raylib</strong> y me muevo entre el backend con <strong>C# y .NET</strong>,
+              interfaces con <strong>React</strong>, sitios con <strong>PHP</strong> y simulación de <strong>redes</strong> en Cisco Packet Tracer.
+            </p>
+
+            <ul class="focus reveal" style="--d:.16s" aria-label="Enfoque actual">
+              <li>Estructuras de datos</li>
+              <li>POO</li>
+              <li>Desarrollo web</li>
+              <li>Backend</li>
+              <li>Redes</li>
+            </ul>
+
+            <div class="stats">
+              <div class="stat card spotlight reveal" style="--d:.05s">
+                <strong><span data-count="4">0</span>.º</strong>
+                <span>Semestre</span>
+              </div>
+              <div class="stat card spotlight reveal" style="--d:.1s">
+                <strong><span data-count="15" id="techCount">0</span>+</strong>
+                <span>Tecnologías</span>
+              </div>
+              <div class="stat card spotlight reveal" style="--d:.15s">
+                <strong><span data-count="11" id="repoCount">0</span></strong>
+                <span>Repos públicos</span>
+              </div>
+              <div class="stat card spotlight reveal" style="--d:.2s">
+                <strong>∞</strong>
+                <span>Ganas de aprender</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ SKILLS ============================ -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="kicker">02 <i></i> skills</span>
+          <h2 class="section__title">Mi stack <span class="gradient-text">tecnológico</span></h2>
+          <p class="section__sub">Lenguajes, frameworks y herramientas con las que construyo.</p>
+        </div>
+
+        <div class="filters reveal" role="group" aria-label="Filtrar tecnologías">
+          <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">Todo</button>
+          <button class="filter" type="button" data-filter="lang" aria-pressed="false">Lenguajes</button>
+          <button class="filter" type="button" data-filter="web" aria-pressed="false">Web y Frameworks</button>
+          <button class="filter" type="button" data-filter="tools" aria-pressed="false">Herramientas y Redes</button>
+        </div>
+
+        <div class="skills" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============================ PROYECTOS ============================ -->
+    <section class="section" id="proyectos">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="kicker">03 <i></i> proyectos</span>
+          <h2 class="section__title">Proyectos <span class="gradient-text">destacados</span></h2>
+          <p class="section__sub">Una selección de lo que he construido. El lenguaje y la última actualización llegan en vivo desde GitHub.</p>
+        </div>
+
+        <div class="projects" id="projectsGrid"></div>
+
+        <div class="center reveal">
+          <a class="btn btn--ghost magnetic" href="https://github.com/Smyl0?tab=repositories" target="_blank" rel="noopener">
+            <span>Ver todos en GitHub</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ TERMINAL ============================ -->
+    <section class="section" id="terminal">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <span class="kicker">04 <i></i> terminal</span>
+          <h2 class="section__title">Explora mi <span class="gradient-text">terminal</span></h2>
+          <p class="section__sub">Escribe <code>help</code> para ver los comandos. Pista: prueba <code>neofetch</code> o <code>matrix</code> 😉</p>
+        </div>
+
+        <div class="term reveal" id="term">
+          <div class="term__bar">
+            <span class="dot dot--red"></span><span class="dot dot--yellow"></span><span class="dot dot--green"></span>
+            <span class="term__title">steven@uta: ~</span>
+          </div>
+          <div class="term__body" id="termBody">
+            <div id="termOut" aria-live="polite"></div>
+            <form class="term__line" id="termForm" autocomplete="off">
+              <label for="termInput" class="term__prompt"><span class="t-user">steven@uta</span>:<span class="t-path">~</span>$</label>
+              <input id="termInput" class="term__input" type="text" spellcheck="false" autocapitalize="off" autocomplete="off" enterkeyhint="send" />
+            </form>
+          </div>
+        </div>
+
+        <div class="chips reveal" id="termChips" aria-label="Comandos rápidos">
+          <button type="button" data-cmd="help">help</button>
+          <button type="button" data-cmd="about">about</button>
+          <button type="button" data-cmd="skills">skills</button>
+          <button type="button" data-cmd="proyectos">proyectos</button>
+          <button type="button" data-cmd="neofetch">neofetch</button>
+          <button type="button" data-cmd="contacto">contacto</button>
+          <button type="button" data-cmd="matrix">matrix</button>
+          <button type="button" data-cmd="clear">clear</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ CONTACTO ============================ -->
+    <section class="section" id="contacto">
+      <div class="container">
+        <div class="contact card spotlight reveal">
+          <span class="kicker">05 <i></i> contacto</span>
+          <h2 class="contact__title">¿Tienes una idea?<br /><span class="gradient-text">Hablemos.</span></h2>
+          <p class="section__sub">Estoy abierto a colaborar en proyectos, compartir ideas y seguir aprendiendo. Escríbeme y te respondo lo antes posible.</p>
+
+          <div class="contact__actions">
+            <a class="btn btn--primary btn--lg magnetic" href="mailto:stevenpallo1025@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+              <span>Enviar correo</span>
+            </a>
+            <button class="btn btn--ghost btn--lg magnetic" id="copyEmail" type="button">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span>Copiar correo</span>
+            </button>
+          </div>
+
+          <div class="contact__cards">
+            <a class="ccard" href="mailto:stevenpallo1025@gmail.com">
+              <span class="ccard__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span>
+              <span class="ccard__text"><small>Correo</small><strong>stevenpallo1025@gmail.com</strong></span>
+            </a>
+            <a class="ccard" href="https://www.linkedin.com/in/steven-pallo-b2717340a" target="_blank" rel="noopener">
+              <span class="ccard__icon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></span>
+              <span class="ccard__text"><small>LinkedIn</small><strong>Steven Pallo</strong></span>
+            </a>
+            <a class="ccard" href="https://github.com/Smyl0" target="_blank" rel="noopener">
+              <span class="ccard__icon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span>
+              <span class="ccard__text"><small>GitHub</small><strong>@Smyl0</strong></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================ PIE ============================ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year">2026</span> Steven Pallo · Ambato, Ecuador</p>
+      <p class="footer__made">Hecho con HTML, CSS y JavaScript</p>
+      <a href="#inicio" class="to-top" aria-label="Volver arriba">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <canvas id="matrix" class="matrix" aria-hidden="true"></canvas>
+</body>
+</html>
